@@ -1,0 +1,20 @@
+.aem--stickyContainer__base{position:fixed;top:0;left:0;width:100%;height:auto}
+.aem--stickyContainer__base.is-animated{-webkit-transition:-webkit-transform .2s linear;transition:-webkit-transform .2s linear;transition:transform .2s linear;transition:transform .2s linear,-webkit-transform .2s linear;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-perspective:1000;perspective:1000}
+.aem--stickyContainer__base--hasContentSearch{height:100%}
+.aem--stickyContainer__closeButtonWrapper{position:relative;margin:0 auto}
+@media(min-width:768px){.aem--stickyContainer__closeButtonWrapper{width:768px}
+}
+@media(min-width:1024px){.aem--stickyContainer__closeButtonWrapper{width:1024px}
+}
+@media(min-width:1280px){.aem--stickyContainer__closeButtonWrapper{width:1280px}
+}
+@media(min-width:1440px){.aem--stickyContainer__closeButtonWrapper{width:1440px}
+}
+@media(min-width:768px){.aem--stickyContainer__closeButtonWrapper .aem--stickyContainer__closeButton{background:rgba(0,0,0,0.7);right:9px;top:0;padding:9px;height:35px;width:35px}
+.aem--stickyContainer__closeButtonWrapper .aem--stickyContainer__closeButton:before{color:#fff}
+}
+@media(min-width:1280px){.aem--stickyContainer__closeButtonWrapper .aem--stickyContainer__closeButton{right:14px}
+}
+@media(min-width:1440px){.aem--stickyContainer__closeButtonWrapper .aem--stickyContainer__closeButton{right:4px}
+}
+.aem--stickyContainer__element--isRelative{position:relative}

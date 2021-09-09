@@ -1,0 +1,64 @@
+.aem--header{position:relative;z-index:30}
+.aem--header__placeholder,.aem--header__placeholder--contextual{top:0;width:100%;z-index:2}
+.aem--header__base{position:relative;background:#000}
+.aem--header__placeholder .aem--header__base--stickToBottom{overflow:hidden;width:100%;position:absolute;bottom:0}
+.aem--header__placeholder .aem--header__base--stickToBottom.CINOWF-4153-fix{bottom:auto}
+.aem--header--is-shown .aem--header__base{display:block}
+.aem--header__base--typeA{-webkit-transition:background 1000ms ease;transition:background 1000ms ease}
+@media(min-width:768px){.aem--header__base--typeA{background:-webkit-gradient(linear,left top,right top,from(#000),color-stop(40%,#000),color-stop(60%,rgba(0,0,0,0.6)));background:linear-gradient(to right,#000 0,#000 40%,rgba(0,0,0,0.6) 60%)}
+}
+@media(min-width:768px){.aem--header__base--typeB{background:#000;background:linear-gradient(180deg,#000 0,#2e2e2e 300px,#000 1000px)}
+}
+.aem--header__reference{display:none}
+@media(min-width:768px){.aem--header{-webkit-transition:padding-top 400ms;transition:padding-top 400ms}
+}
+.aem--langSwitcher__base{width:100%}
+@media(min-width:1024px){.aem--langSwitcher__base{float:left;width:auto}
+}
+.aem--langSwitcher__list{list-style:none;text-align:center}
+@media(min-width:480px){.aem--langSwitcher__list{text-align:left}
+}
+.aem--langSwitcher__item{font-size:.875rem;font-family:"DaimlerCS-Regular",Helvetica,Arial,sans-serif;line-height:1.28571;display:inline-block;color:#fff}
+@media(-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){.aem--langSwitcher__item{font-family:"DaimlerCS-Light",Helvetica,Arial,sans-serif}
+}
+.aem--langSwitcher__item:after{margin:0 11px;content:'|'}
+@media(min-width:768px){.aem--langSwitcher__item:after{margin:0 3px}
+}
+@media(min-width:0) and (max-width:1279px){.aem--langSwitcher__item:after{margin:0 11px}
+}
+.aem--langSwitcher__item:last-child:after{margin:0;content:''}
+.aem--langSwitcher__item:last-child .aem--langSwitcher__link--is-short{margin-right:4px}
+.aem--langSwitcher__link{font-size:.875rem;font-family:"DaimlerCS-Regular",Helvetica,Arial,sans-serif;line-height:1.28571;padding-top:.04271em;padding-bottom:.19571em;display:inline-block;color:#fff}
+@media(-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){.aem--langSwitcher__link{font-family:"DaimlerCS-Light",Helvetica,Arial,sans-serif}
+}
+.aem--metanav__information .aem--langSwitcher__link:before{font-family:"DaimlerIcons";content:"";speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;vertical-align:baseline;line-height:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.aem--metanav__user .aem--langSwitcher__link:before{font-family:"DaimlerIcons";content:"";speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;vertical-align:baseline;line-height:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.aem--metanav__register .aem--langSwitcher__link:before{font-family:"DaimlerIcons";content:"";speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;vertical-align:baseline;line-height:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.aem--metanav__vehicle .aem--langSwitcher__link:before{font-family:"DaimlerIcons";content:"";speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;vertical-align:baseline;line-height:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.aem--metanav__vehicle .aem--langSwitcher__link::before{font-size:17px}
+.aem.aem--is-not-touch-device .aem--langSwitcher__link:hover,.aem.aem--is-not-touch-device .aem--langSwitcher__link:active{color:#00adef}
+.aem--langSwitcher__text{display:none}
+@media(min-width:1024px){.aem--langSwitcher__text{display:inline-block}
+}
+.aem--langSwitcher__text--is-short{display:inline-block}
+@media(min-width:1024px){.aem--langSwitcher__text--is-short{display:none}
+}
+.aem--logo__base{float:left;margin-top:22px;margin-bottom:14px;margin-left:0;overflow:hidden;width:179px;height:40px;display:table}
+@media(min-width:768px){.aem--logo__base{margin-top:16px;margin-bottom:16px;margin-left:-11px;width:257px;height:64px}
+}
+@media(min-width:1024px){.aem--logo__base{margin-left:-19px}
+}
+@media(min-width:1280px){.aem--logo__base{margin-top:22px;margin-bottom:22px}
+}
+.aem--logo__link{display:table-row}
+.aem--logo__link .aem--svgImg{width:100%;height:auto}
+.aem--logo__img{display:block;width:100%;height:100%}
+.aem--logo__icon{-webkit-box-sizing:content-box;box-sizing:content-box;display:table-cell;height:40px;padding-right:40px;width:40px}
+@media(min-width:768px){.aem--logo__icon{width:64px;height:64px;padding-right:64px}
+}
+.aem--logo__claim{display:table-cell;vertical-align:bottom;padding-bottom:4px}
+.header__base .aem--logo__claim .aem--svgImg{margin-bottom:3px}
+@media(min-width:768px){.header__base .aem--logo__claim .aem--svgImg{margin-bottom:5px}
+}
+@media(min-width:768px){.aem--logo__claim .aem--svgImg{padding-right:16px}
+}

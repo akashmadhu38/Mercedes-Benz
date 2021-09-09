@@ -1,0 +1,95 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.master" AutoEventWireup="true" CodeFile="Cashtransfer.aspx.cs" Inherits="Cashtransfer" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    
+    <style type="text/css">
+        .auto-style1 {
+            height: 40px;
+        }
+    </style>
+    
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <table width="750" class="nav-justified">
+        <tr>
+            <td class="heading" colspan="3">PAYMENT</td>
+        </tr>
+        <tr>
+            <td width="150">&nbsp;</td>
+            <td width="200">&nbsp;</td>
+            <td width="400">&nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td>
+                <table align="center" cellpadding="3" cellspacing="3" width="400">
+                   <tr>
+                <td colspan="3" style="background-color: #137AA6; color: #FFFFFF; padding-left:40px; text-transform: uppercase" class="auto-style1">proceed to payment</td>
+            </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Balance : Rs.
+                    <asp:Label ID="lblbalance" runat="server" CssClass="auto-style16" ForeColor="Green"></asp:Label>
+                    /-</td>
+                    </tr>
+                    <tr>
+                        <td width="150">&nbsp;</td>
+                        <td width="125">Date</td>
+                        <td width="125">
+                    <asp:Label ID="lblDate" runat="server" CssClass="auto-style6"></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>Time</td>
+                        <td>
+                    <asp:Label ID="lbltime" runat="server" style="color: #808000"></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>Name</td>
+                        <td>
+                    <asp:Label ID="lblname" runat="server" CssClass="auto-style16"></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>Charge</td>
+                        <td>Rs.
+                    <asp:Label ID="lblamount" runat="server" CssClass="auto-style16" ForeColor="Red"></asp:Label>
+                &nbsp;/-</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <asp:Button ID="Button1" runat="server" CssClass="button" OnClick="Button1_Click" Text="PAY AMOUNT" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                    <asp:Label ID="lblmsg" runat="server" CssClass="auto-style16" ForeColor="Red"></asp:Label>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr> 
+    </table>
+</asp:Content>
+

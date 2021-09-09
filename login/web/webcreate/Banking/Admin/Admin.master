@@ -1,0 +1,231 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<script src="js/jquery.min.js"></script>
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Machinery Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+					</script>
+
+<!--animate-->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="js/wow.min.js"></script>
+	<script>
+		 new WOW().init();
+	</script>
+<!--//end-animate-->
+<link href='//fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+	<script type="text/javascript">
+							$(window).load(function() {
+								$("#flexiselDemo1").flexisel({
+									visibleItems: 3,
+									animationSpeed: 1000,
+									autoPlay: true,
+									autoPlaySpeed: 3000,    		
+									pauseOnHover: true,
+									enableResponsiveBreakpoints: true,
+									responsiveBreakpoints: { 
+										portrait: { 
+											changePoint:480,
+											visibleItems: 1
+										}, 
+										landscape: { 
+											changePoint:640,
+											visibleItems: 2
+										},
+										tablet: { 
+											changePoint:991,
+											visibleItems: 2
+										}
+									}
+								});
+								
+							});
+					</script>
+		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+</head>
+<body>
+  <!--header-->
+<div class="header head-t" id="top">
+ 
+
+<!---->
+	<div class="container">
+<nav class="navbar navbar-default">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+                        <div class="navbar-brand logo ">
+
+                            <img src="img/paypal-logo.png" width="190" height="50" />
+
+                        </div>
+<div class="clearfix"></div>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse nav-wil links" id="bs-example-navbar-collapse-1">
+					<div class="top-nav">
+    <a href="Dashboard.aspx" class="demo-4">
+      <span>
+        <span>Home</span>
+        <span>Home</span>
+        <span></span>
+      </span>
+    </a>
+
+    <a href="AddBank.aspx" class="demo-4">
+      <span>
+        <span>Bank</span>
+        <span>Bank</span>
+        <span></span>
+      </span>
+    </a>
+      <a href="AddBranch.aspx" class="demo-4">
+      <span>
+        <span>Branch</span>
+        <span>Branch</span>
+        <span></span>
+      </span>
+    </a>
+	<a href="AddAccount.aspx" class="demo-4">
+      <span>
+        <span>Create Account</span>
+        <span>Create Account</span>
+        <span></span>
+      </span>
+    </a>
+
+
+    <a href="signout.aspx" class="demo-4">
+      <span>
+        <span>Sign Out</span>
+        <span>Sign Out</span>
+        <span></span>
+      </span>
+    </a>
+
+  </div>
+					</div><!-- /.navbar-collapse -->
+				</nav>
+				</div>
+				</div>
+
+<!---->
+   
+<div class="about">
+
+	<div class="container" style="background-image: url('/img/Paypal36.png'); background-repeat: no-repeat;min-height:400px; background-position: left center">
+	<%--<div class="col-md-4 content-pro-head content-pro-head3">
+		
+
+
+
+
+        <div >
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>--%>
+  <div class="col-md-8 content-pro-head1">
+   		
+      <form id="form1" runat="server">
+    
+      <table width="100%">
+          <tr>
+              <td width="30%" style="vertical-align:top;">
+                  <asp:Image ID="Image1" ImageUrl="~/Banking/Admin/img/netbanking.png" Width="300" Height="200" runat="server" />
+              </td>
+              <td width="5%">
+              </td>
+              <td width="65%" style="vertical-align:top;">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+              </td>
+          </tr>
+      </table>
+
+    
+        
+     
+    </form>
+
+
+
+
+		<div class="clearfix"> </div>
+  </div>
+  
+	<div class="clearfix"> </div>
+	</div>
+</div>
+   <%-- <div>
+        <img src="img/paypal.jpg" height="100px" width="900px" />
+    </div>--%>
+<!---->
+<!--//-->
+<!--footer-->
+<div class="footer">
+	 
+	<div class="footer-bottom">
+		<div class="container">
+			<img src="images/in.png" alt=""/>
+			 
+			<ul>
+              
+				<li><a href="Dashboard.aspx">Home</a></li>
+				<li><a href="Addcash.aspx">Add Cash</a></li>
+				<li><a href="Cashtransfer.aspx">Cash Transfer</a></li>
+				<li><a href="transactions.aspx">Transactions</a></li>
+				<li><a href="signout.aspx">Sign Out</a></li>
+				</ul>
+		<div class="copy">
+			<p class="footer-gri" >©onlinebanking. All rights reserved</p>
+		</div>
+		</div>
+	</div>
+</div>
+<!--footer-->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.min.js"></script>
+<!-- //for bootstrap working -->
+
+   
+</body>
+</html>

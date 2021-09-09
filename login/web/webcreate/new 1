@@ -1,0 +1,42 @@
+/*<?php
+	if(isset($_POST["btnsubmit"]))
+	{
+	include("../db/connection.php");
+	$obj=new connection();
+	extract($_POST);
+	$sql1="select * from login where uname='$txtuname'";
+	$res=$obj->execute($sql1);
+	if($row=mysqli_fetch_array($res))
+	{
+	?>
+	<script>alert('Username Already Exists');</script>
+	<?php
+	}
+	else
+	{
+	$sql2="insert into login values(null,'$txtuname','$txtpswd','student')";
+	$obj->execute($sql2);
+	$sql3="insert into student values('$txtreg','$txtfname','$txtlname','$gender','$txtdob','$txthname','$txtloc','$txtpin','$txtemail','$txtmob','$batch','$semester','$txtfathername','$txtoccu','$txtmname','$txtoccu1','$txtuname')";
+	$obj->execute($sql3);
+	?>
+	<script>alert('Student Registered Successfully');</script>
+	<?php
+	}
+	}
+	?>
+<?php
+include("footer.php");
+?>
+
+
+
+
+
+
+
+<?php
+include("testing.php");
+include("../../db/connection.php");
+$obj=new connection();
+error_reporting(0);
+?>

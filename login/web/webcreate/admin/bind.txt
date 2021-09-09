@@ -1,0 +1,110 @@
+<?php
+
+function BindCourse_Master()
+{
+	include("../db/connection.php");
+	$obj=new connection();
+	$sql="select * from course";
+	$res=$obj->execute($sql);
+	?>	
+		<option value="0">--COURSE--</option>
+		<?php
+	while($row=mysqli_fetch_array($res))
+	{
+		?>
+		<option value="<?php echo $row["cid"];?>"><?php echo $row["cname"]; ?></option>
+		<?php
+	}
+}
+
+function BindDepartment()
+{
+	include("../db/connection.php");
+	$obj=new connection();
+	$sql="select * from department";
+	$res=$obj->execute($sql);
+	?>	
+		<option value="0">--DEPARTMENT--</option>
+		<?php
+	while($row=mysqli_fetch_array($res))
+	{
+		?>
+		<option value="<?php echo $row["deptid"];?>"><?php echo $row["dept"]; ?></option>
+		<?php
+	}
+}
+
+function BindCourse()
+{
+	include("../db/connection.php");
+	$obj=new connection();
+	$cat=$_POST["cat"];
+	$sql="select * from course where category='" . $_POST["cat"] . "'";
+	$res=$obj->execute($sql);
+	?>	
+		<option value="0">--COURSE--</option>
+		<?php
+	while($row=mysqli_fetch_array($res))
+	{
+		?>
+		<option value="<?php echo $row["cid"];?>"><?php echo $row["cname"]; ?></option>
+		<?php
+	}
+}
+
+if(isset($_GET['cat_s'])) { 
+BindCourse();
+// get function name and parameter  $_GET['f']($_GET["p"]); 
+}
+
+
+function BindSubject()
+{
+	include("../db/connection.php");
+	$obj=new connection();
+	$sem=$_POST["sem"];
+	$cid=$_POST["cid"];
+	$sql="select * from subject where sem='" . $_POST["sem"] . "' and cid='" . $_POST["cid"] . "'";
+	$res=$obj->execute($sql);
+	?>
+	
+		<option value="0">--SUBJECT--</option>
+		<?php
+	while($row=mysqli_fetch_array($res))
+	{
+		?>
+		<option value="<?php echo $row["subid"];?>"><?php echo $row["subname"]; ?></option>
+		<?php
+	}
+}
+
+if(isset($_GET['sem_m'])) { 
+BindSubject();
+// get function name and parameter  $_GET['f']($_GET["p"]); 
+}
+
+function BindLocation()
+{
+	include("../connection.php");
+	$obj=new connection();
+	$sql="select * from location where did='" . $_POST["did"] . "'";
+	$res=$obj->execute($sql);
+	?>
+	
+		<option value="0">--LOCATION--</option>
+		<?php
+	while($row=mysqli_fetch_array($res))
+	{
+		?>
+		<option value="<?php echo $row["lid"];?>"><?php echo $row["lname"]; ?></option>
+		<?php
+	}
+}
+
+
+if(isset($_GET['loc'])) { 
+BindLocation();
+// get function name and parameter  $_GET['f']($_GET["p"]); 
+}
+
+?>

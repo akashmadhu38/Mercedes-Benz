@@ -1,0 +1,36 @@
+.aem--social__base{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;margin-left:auto;margin-right:auto;max-width:1352px;width:90%}
+@media(min-width:480px){.aem--social__base{width:93.33%}
+}
+@media(min-width:768px){.aem--social__base{width:714px}
+}
+@media(min-width:1024px){.aem--social__base{width:918px}
+}
+@media(min-width:1280px){.aem--social__base{width:1154px}
+}
+@media(min-width:1440px){.aem--social__base{width:1352px}
+}
+@media(min-width:1024px){.aem--social__base{-webkit-box-flex:0;-ms-flex:0 0 41.66667%;flex:0 0 41.66667%;max-width:41.66667%}
+}
+@media(min-width:1280px){.aem--social__base{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}
+}
+.aem--footer--only-social .aem--social__base{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}
+.aem--social__hl{font-size:1rem;font-family:"DaimlerCS-Regular",Helvetica,Arial,sans-serif;line-height:1.25;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding-top:.00912em;padding-bottom:.15788em;margin-top:.8125em;display:none}
+@media(-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){.aem--social__hl{font-family:"DaimlerCS-Light",Helvetica,Arial,sans-serif}
+}
+@media(min-width:768px){.aem--social__hl{padding-top:.00912em;padding-bottom:.15788em;margin-top:2.125em}
+}
+@media(min-width:1024px){.aem--social__hl{padding-top:.00912em;padding-bottom:.15788em;margin-top:.8125em}
+}
+@media(min-width:768px){.aem--social__hl{display:block}
+}
+.aem--social__list{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;flex-flow:row wrap;margin:30px 0;padding:0 9px;list-style:none;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+@media(min-width:768px){.aem--social__list{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;margin:25px 0}
+}
+@media(min-width:1024px){.aem--social__list{padding:5px 0 0}
+}
+@media(min-width:1440px){.aem--social__list{margin:31px 0}
+}
+.aem--social__item{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;height:22px}
+@media(min-width:768px){.aem--social__item{margin-right:35px}
+}
+.aem--social__item:last-child{margin-right:0}

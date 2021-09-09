@@ -1,0 +1,9 @@
+.teaserboxonhome__base{margin-top:40px}
+@media(min-width:768px){.teaserboxonhome__base{margin-bottom:60px}
+}
+.teaserboxonhome__base .headings__base{margin-bottom:24px}
+@media(min-width:768px){.teaserboxonhome__base .headings__base{margin-bottom:40px}
+}
+.teaserboxonhome__base .teaserbox__base .footnotes__base{display:none}
+@media(min-width:768px){.teaserboxonhome__base .footnotes__base--containsFootnotes{margin-top:20px}
+}

@@ -1,0 +1,27 @@
+ 
+Introduction
+ 
+1.ABSTRACT
+This project is Entitled as “
+Bike showroom management system“developed using asp.net as a.Front End and Microsoft SQL server 2005 as a Back End. This project is ideal for dealers or resellers of any size. The Bike showroom control panel can be access anywhere in any time. Bike showroom management system describes the complete process of selling a Bike to a
+customer from the dealer’s showroom. Before selling, the
+Bike belongs to the fixed asset of the
+dealer’s show
+room. So the main point of this scenario is posting the Bike from a fixed asset to a current asset. While executing the process, the dealer can manually maintain the Bike business transaction type, which means, the Bike can be set as a new or used Bike to sell to the customer. This scenario shows the process of new Bike sales.
+
+ 
+The dealer purchases the Bike from Company
+
+ 
+The customer wants to buy Bike
+from dealer’s showroom.
+ 
+
+ 
+The dealer creates a sales order for the end customer
+
+ 
+The customer confirms the order
+
+ 
+The dealer creates a service order to prepare the Bike

@@ -1,0 +1,3 @@
+.livechat{display:none;background:#00adef;overflow:hidden;-webkit-transition:-webkit-transform 500ms;transition:-webkit-transform 500ms;transition:transform 500ms;transition:transform 500ms,-webkit-transform 500ms;cursor:pointer}
+.livechat:hover{background:#0088c6}
+.livechat:last-child{border-bottom:0}

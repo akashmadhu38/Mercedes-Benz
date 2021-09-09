@@ -1,0 +1,71 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Data;
+
+public partial class Cashtransfer : System.Web.UI.Page
+{
+    Paypal obj = new Paypal();
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            //sp_getbalance(@email varchar(50))
+            obj.cmd_sp.Parameters.AddWithValue("@email", (String)Session["email"]);
+            obj.StoredProcedureExe_DT("sp_getbalance");
+            if (obj.dt.Rows.Count > 0)
+            {
+                lblbalance.Text = obj.dt.Rows[0]["balance"].ToString();
+            }
+            lblamount.Text = (String)Session["amt"];
+            lblDate.Text = System.DateTime.Now.Date.ToShortDateString();
+            TimeSpan timespan = new TimeSpan(System.DateTime.Now.TimeOfDay.Hours, System.DateTime.Now.TimeOfDay.Minutes, System.DateTime.Now.TimeOfDay.Seconds);
+            DateTime time = DateTime.Today.Add(timespan);
+            lbltime.Text = time.ToString("hh:mm tt");
+            //lbltime.Text = System.DateTime.Now.TimeOfDay.Hours.ToString()+":"+ System.DateTime.Now.TimeOfDay.Minutes.ToString()+" "+ System.DateTime.Now.Times
+            lblname.Text = (String)Session["name"];
+        }
+    }
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        if (lblbalance.Text != "")
+        {
+            double balance = Convert.ToDouble(lblbalance.Text);
+            double amount = Convert.ToDouble(lblamount.Text);
+            if (balance < amount)
+            {
+                lblmsg.Text = "Insufficient Balance...Cannot Proceed";
+            }
+            else
+            {
+                //[sp_transaction](@tdate varchar(50),@email varchar(50),@type varchar(50),@amount numeric(18,2))
+                obj.cmd_sp.Parameters.AddWithValue("@tdate", lblDate.Text + " " + lbltime.Text);
+                obj.cmd_sp.Parameters.AddWithValue("@email", (String)Session["email"]);
+                obj.cmd_sp.Parameters.AddWithValue("@type", "debit");
+                obj.cmd_sp.Parameters.AddWithValue("@amount", lblamount.Text);
+                SqlParameter p = new SqlParameter();
+                p.Direction = ParameterDirection.ReturnValue;
+                obj.cmd_sp.Parameters.Add(p);
+                obj.StoredProcedure_Exe("sp_transaction");
+                if (p.Value.ToString() == "0")
+                {
+                    Response.Write(obj.Messagebox("Payment Completed Successfully"));
+                    Server.Transfer("transactions.aspx");
+                }
+                else
+                {
+                    lblmsg.Text = "Insufficient Balance...Cannot Proceed";
+                }
+            }
+        }
+        else
+        {
+            lblmsg.Text = "Cannot Proceed...Account is empty";
+        }
+    }
+}

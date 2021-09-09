@@ -1,0 +1,40 @@
+<?php
+		 $que="select * from spec";
+$dat=mysqli_query($conn,$que);
+$totals=mysqli_num_rows($dat);
+
+if($totals!=0)
+{
+$x="";
+echo "<div class='col-sm-4'>
+        <div class='thumbnail'><table><tr>
+		<th>DISPLACEMENT</th>
+		<th>FUEL</th>
+		<th>POWER</th>
+		<th>TORQUE</th>
+		<th>DRIVETRAIN</th>
+		<th>TRANSMISSION</th>
+		<th>GEARS</th>
+		<th>CYLINDERS</th>
+		<th>MILAGE</th>
+		<th>FUEL TANK CAPACITY</th>
+		<th>WHEEL TYPE</th>
+		<th>TYRE SIZE</th></tr>
+		<tr>
+          <td><p><strong>".$result['DISPLACEMENT']."</strong></p></td>
+          <td><p><strong>".$result['FUEL']."</strong></p></td>
+          <td><p><strong>".$result['POWER']."</strong></p></td>
+          <td><p><strong>".$result['TORQUE']."</strong></p></td>
+		  <td><p><strong>".$result['DRIVETRAIN']."</strong></p></td>
+          <td><p><strong>".$result['TRANSMISSION']."</strong></p></td>
+          <td><p><strong>".$result['GEARS']."</strong></p></td>
+          <td><p><strong>".$result['MILAGE']."</strong></p></td>
+		  <td><p><strong>".$result['FUEL TANK CAPACITY']."</strong></p></td>
+          <td><p><strong>".$result['WHEEL TYPE']."</strong></p></td>
+          <td><p><strong>".$result['TYRE SIZE']."</strong></p></td>
+          <td><p><strong>".$result['modelName']."</strong></p></td>
+          </tr>      
+		 </table>
+		  </div>
+      </div>";
+?>

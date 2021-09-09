@@ -1,0 +1,26 @@
+.emb-cp-layer div.cp-inner h1{font-family:DaimlerCAC-Regular,'Times New Roman' !important;font-size:22px;color:#7d7d7d;font-weight:400;line-height:27px}
+.emb-cp-layer{min-width:300px !important}
+.emb-cp-layer .links a{font-size:.875rem;font-family:"DaimlerCS-Regular",Helvetica,Arial,sans-serif;line-height:1.28571;padding-top:.04271em;padding-bottom:.19571em;font-size:14px;color:#333}
+@media(-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){.emb-cp-layer .links a{font-family:"DaimlerCS-Light",Helvetica,Arial,sans-serif}
+}
+.emb-cp-layer .links a:hover{color:#00adef}
+.ms93-bt3.close{cursor:pointer}
+#cp-dialog .cp-layer .cp-inner{padding-bottom:33px;padding-top:19px}
+#cp-dialog .cp-layer .cp-inner h5{font-size:1rem;font-family:"DaimlerCS-Demi",Helvetica,Arial,sans-serif;line-height:1.25;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:#333;font-family:"DaimlerCS-Demi",Helvetica,Arial,sans-serif !important}
+#cp-dialog .cp-layer .cp-inner .description{font-size:.875rem;font-family:"DaimlerCS-Regular",Helvetica,Arial,sans-serif;line-height:1.28571;color:#333;padding-top:13px}
+@media(-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){#cp-dialog .cp-layer .cp-inner .description{font-family:"DaimlerCS-Light",Helvetica,Arial,sans-serif}
+}
+#cp-dialog .cp-layer .cp-inner .links{font-size:.875rem;font-family:"DaimlerCS-Regular",Helvetica,Arial,sans-serif;line-height:1.28571;padding-top:.04271em;padding-bottom:.19571em;font-size:14px;color:#333;padding-top:14px}
+@media(-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){#cp-dialog .cp-layer .cp-inner .links{font-family:"DaimlerCS-Light",Helvetica,Arial,sans-serif}
+}
+#cp-dialog .cp-layer .cp-inner .links:hover{color:#00adef}
+#cp-dialog .cp-layer .cp-inner .links a{color:#333}
+#cp-dialog .cp-layer .cp-inner .close{background-color:inherit;bottom:inherit !important;border:0;top:20px !important;right:20px !important}
+#cp-dialog .cp-layer .cp-inner .close a{-webkit-box-shadow:none;box-shadow:none;background-color:transparent;-webkit-transition:none;transition:none;border:0;border-radius:0;outline:0;padding:0;margin:0;width:35px;height:35px;background:rgba(0,0,0,0.7);display:inline-block;text-decoration:none;background-color:inherit;color:transparent;height:17px;overflow:hidden;width:17px}
+#cp-dialog .cp-layer .cp-inner .close a:before{content:"";font-family:"DaimlerIcons";color:#fff;font-size:13px}
+@media(min-width:768px){#cp-dialog .cp-layer .cp-inner .close a:before{font-size:17px}
+}
+#cp-dialog .cp-layer .cp-inner .close a:before{font-size:17px;display:block;color:#333;font-family:"DaimlerIcons" !important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;content:"";opacity:1}
+#cp-dialog .cp-layer .cp-inner .close a:active:before{color:#00adef}
+.aem.aem--is-not-touch-device #cp-dialog .cp-layer .cp-inner .close a{cursor:pointer}
+.aem.aem--is-not-touch-device #cp-dialog .cp-layer .cp-inner .close a:hover:before{color:#00adef}

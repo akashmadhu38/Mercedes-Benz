@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+
+	<script src="main_data/jquery-1.js"></script>
+	<script src="main_data/launch-EN1d0a877abb6244dcb9c10d3f3faec30e.js" async=""></script>
+</head>
+
+<body>
+
+
+
+<script>_satellite["__runScript1"](function(event, target) {
+var adobe_dtm_domainstring = "";
+if (typeof adobe_dtm_domainstring == "undefined" || adobe_dtm_domainstring == "") {
+  var adobe_dtm_protocol = window.location.protocol;
+  var adobe_dtm_domainarray = [];
+  adobe_dtm_domainarray.push(adobe_dtm_protocol + "//e-services.mercedes-benz.com");
+  adobe_dtm_domainarray.push(adobe_dtm_protocol + "//www.mercedes-benz.com.au");
+  adobe_dtm_domainarray.push(adobe_dtm_protocol + "//www.mercedes-benz.com.sg");
+  adobe_dtm_domainarray.push(adobe_dtm_protocol + "//www.mercedes-benz.co.th");
+  adobe_dtm_domainarray.push(adobe_dtm_protocol + "//www.mercedes-benz.gr");
+  adobe_dtm_domainarray.push(adobe_dtm_protocol + "//www.mercedes-benz.ch");
+  adobe_dtm_domainarray.push(adobe_dtm_protocol + "//configurator.mercedes-benz.com");
+  adobe_dtm_domainarray.push(adobe_dtm_protocol + "//rcc-featurercc-5629.dev.cf.oneweb.mercedes-benz.com");
+
+  adobe_dtm_domainstring = adobe_dtm_domainarray.join();
+}
+
+function getCookies(origin) {
+  // read all cookies
+  var cookies = document.cookie;
+  // split up the diffrent cookies and save them in an array
+  var splitCookies = cookies.split(';');
+  var cookiesArray = [];
+
+  for (var i = 0; i < splitCookies.length; i++) {
+    // split the cookie into name & value
+    var cookieArray = splitCookies[i].split('=');
+
+    cookiesArray.push({
+      'dtm_cookiename': cookieArray[0],
+      'cookievalue': cookieArray[1]
+    });
+  }
+
+  // send the stringified cookies array
+  window.parent.postMessage("t4m_cookies_nc:allcookies" + JSON.stringify(cookiesArray), origin);
+
+  return false;
+}
+
+$(window).on('message', function(e) {
+  var adobe_dtm_messageevent = e.originalEvent;
+  if (~adobe_dtm_domainstring.indexOf(adobe_dtm_messageevent.origin)) {
+    if (~adobe_dtm_messageevent.data.indexOf("t4m_newcall_nc")) {
+      window.parent.postMessage("t4m_cookies_nc:cookie-frame-loaded_nc", '*');
+    } else if (~adobe_dtm_messageevent.data.indexOf("t4m_get_cookies_nc")) {
+      getCookies(adobe_dtm_messageevent.origin);
+    } else if (~adobe_dtm_messageevent.data.indexOf("t4m_set_cookies_nc")) {
+      if (adobe_dtm_messageevent.data.split("|")[1].split("=")[1].split(";")[1] == "") {
+        _satellite.cookie.set(adobe_dtm_messageevent.data.split("|")[1].split("=")[0], adobe_dtm_messageevent.data.split("|")[1].split("=")[1]);
+      } else {
+        var duration = parseInt(adobe_dtm_messageevent.data.split("|")[1].split("=")[1].split(";")[1]);
+        _satellite.cookie.set(adobe_dtm_messageevent.data.split("|")[1].split("=")[0], adobe_dtm_messageevent.data.split("|")[1].split("=")[1].split(";")[0], {expires: duration});
+      }
+    }
+  }
+});
+if (window.parent.postMessage) {
+  window.parent.postMessage("t4m_cookies_nc:cookie-frame-loaded_nc", '*');
+}
+});</script></body></html>

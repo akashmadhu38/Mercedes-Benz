@@ -1,0 +1,76 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"></head><body>
+
+<script>var urlHarvest = true;</script>
+<script type="text/javascript">
+  <!-- -->
+  var axel = Math.random() + "";
+  var a = axel * 10000000000000;
+  var ifrm = document.createElement("iframe");
+  ifrm.style.cssText = "width:1px;height:1px;position:absolute;display:none;";
+  ifrm.src =
+    "https://9086115.fls.doubleclick.net/activityi;src=9086115;type=count0;cat=count1;u1=passengercars;u2=/;u3=;u4=IN;u5=en;u6=;u7=;u8=;u9=;u10=;u11=;u12=;u13=;u14=;u15=;u16=;u17=;u18=;u19=;u20=;u21=2019-07-11T07--7:00|Thursday;u22=08097951490079504954380663414628173734;u23=;u24=;u25=;u26=;u27=;u28=www.google.com;u29=passengercars:mercedes-benz-cars:models:explore;u30=;u31=;u32=;u33=;u34=;u35=;u36=page_view;u37=logged out;u38=;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;ord=" +
+    a +
+    "?";
+
+  var ft_optin="opt-in";
+
+  if (ft_optin == "opt-in" || ft_optin == ""){
+  document.body.appendChild(ifrm);
+  }   
+
+
+</script><iframe style="width: 1px; height: 1px; position: absolute; display: none;" src="a_data_002/a.htm"></iframe>
+<script>
+//Pixel Manager | Export Date: May. 8, 2019 @ 9:58am UTC
+var ft_hSeg = {
+    ref_url:document.referrer,
+    ref_protocol:'',
+    ref_domain:'',
+    ref_path:'',
+    ref_queryStr:'',
+    spot_gID:'10414',
+    seg_set_QStr:false,
+    seg_uri:'',
+    seg_dom:'',
+    ad_domains:['servedby.flashtalking.com','servedby.flashtalking.com'],
+    parseUri:function(str){
+            var o = this,
+              splitObj = /^(http[s]?):\/\/?([^\/\s]+)\/([\w\.]+[^#?;\s]+)(.*)?/.exec(str);
+              if(splitObj===null) return false;
+            var retObj = {
+                  protocol:splitObj[1],
+                  domain:splitObj[2],
+                  path:splitObj[3],
+                  queryString:splitObj[4]
+                  }
+            return retObj;
+        },
+    set_seg:function(run){
+                            if(run == false) { return false };
+                var split_obj = this.parseUri(this.check_ref(this.ref_url)),
+                  seg_path = '/segment/2/read/a;;pixel/?s='+this.spot_gID+'&d=';
+                if(split_obj===false) return false;
+                this.ref_protocol = split_obj.protocol;
+                this.ref_domain = split_obj.domain;
+                this.ref_queryStr = split_obj.queryString;
+                this.ref_path = split_obj.path.replace(new RegExp(decodeURIComponent('%5E/%7C/%24/g')), '');
+                this.seg_dom = this.ad_domains[(this.ref_protocol == 'http')? 0 : 1];
+                this.seg_uri = this.ref_protocol+'://'+this.seg_dom+seg_path+this.ref_domain+'&r='+this.ref_path+(this.seg_set_QStr?'&q='+decodeURIComponent(this.ref_queryStr):'');
+                new Image().src=this.seg_uri;
+                return true;
+            },
+    check_ref:function(url){
+            var st=window.location.search.indexOf('ft_referrer=')+12,
+                en=(window.location.search.substring(st)).indexOf('&ns=');
+                if(en === -1) en = 9e9;
+                cont_ref = decodeURIComponent(window.location.search.substring(st,en+st));
+            if (url === ''|| this.ref_url !== cont_ref){
+                return  cont_ref;
+            }else{
+                return this.ref_url;
+            }
+    }
+  };
+  ft_hSeg.set_seg(urlHarvest);
+</script></body></html>

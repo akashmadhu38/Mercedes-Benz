@@ -1,0 +1,40 @@
+<?php
+
+
+include("testing.php");
+
+
+$idClass=$_GET['accno'];
+
+$qu="select * from accstock where ACCID=".$idClass;
+$da=mysqli_query($conn,$qu);
+$total=mysqli_num_rows($da);
+
+if($total!=0)
+{
+$x="";
+
+while($result=mysqli_fetch_assoc($da))
+{
+echo "
+<a href='e-class.php?modelID=".$result['modelID']."'>
+      <img src='".$result['image']."' alt='Norway' style='width:100%' >
+     <p><strong>".$result['accname']."</strong></p></img>
+	 </a>
+          <button class='w3-button w3-black' ><a  href='user/booking.php'> BOOKING</a></button>
+		  <button class='w3-button w3-black'  ><a  href='e-class.php?modelID=".$result['accno']."'>LEARN MORE</button>
+    </div>
+	
+	</td>
+	</tr>
+</table>";
+	
+	
+
+}
+}
+
+
+
+
+?>

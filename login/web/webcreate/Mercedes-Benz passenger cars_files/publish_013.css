@@ -1,0 +1,77 @@
+.layer__base{position:fixed;overflow-y:auto;overflow-x:hidden;z-index:60;width:100%;height:100%;top:0;left:0;background:rgba(0,0,0,0.8)}
+.layer__container{margin-top:5%;width:100%;margin-left:auto;margin-right:auto;max-width:90%}
+@media(min-width:480px) and (max-width:767px){.layer__container{max-width:93.33%}
+}
+@media(min-width:768px) and (max-width:1023px){.layer__container{width:592px}
+}
+@media(min-width:1024px) and (max-width:1279px){.layer__container{width:450px}
+}
+@media(min-width:1280px) and (max-width:1439px){.layer__container{width:566px}
+}
+@media(min-width:1440px){.layer__container{width:662px}
+}
+@media(min-width:768px) and (max-width:1023px){.layer__container--large{width:714px}
+}
+@media(min-width:1024px) and (max-width:1279px){.layer__container--large{width:762px}
+}
+@media(min-width:1280px) and (max-width:1439px){.layer__container--large{width:958px}
+}
+@media(min-width:1440px){.layer__container--large{width:892px}
+}
+.layer__wrapper{background:#fff;clear:both;height:auto;position:relative;overflow:hidden}
+.layer__wrapper::after{content:"";display:table;clear:both}
+.layer__content{margin-top:40px;margin-bottom:40px}
+@media(min-width:768px){.layer__content{margin-top:39px}
+}
+@media(min-width:768px){.layer__content>.aem--pluginLightbox__closeButton{padding-left:0;padding-right:0}
+}
+@media(min-width:0) and (max-width:767px){.layer__content>* .utilitytext{padding-left:5.14538%;padding-right:5.14538%}
+}
+@media(min-width:768px){.layer__content>*{padding-left:40px;padding-right:40px}
+}
+@media(min-width:768px){.layer__content .tabnav,.layer__content .utilitytext{background:#fff}
+}
+.layer__content .utilitytext:last-child{padding-bottom:40px}
+.layer__content .utilitytext__copy1 p,.layer__content .aem--cookielayerinformation__base p{font-size:1.375rem;font-family:"DaimlerCS-Regular",Helvetica,Arial,sans-serif;line-height:1.18182;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding-top:0;padding-bottom:.08564em;margin-top:-.32773em;color:#333;clear:both;margin-top:0}
+@media(-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){.layer__content .utilitytext__copy1 p,.layer__content .aem--cookielayerinformation__base p{font-family:"DaimlerCS-Light",Helvetica,Arial,sans-serif}
+}
+.layer__content .utilitytext__copy2 p,.layer__content .aem--cookielayerinformation__base p{font-size:1rem;font-family:"DaimlerCS-Regular",Helvetica,Arial,sans-serif;line-height:1.375;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding-top:0;padding-bottom:.10281em;margin-top:-.06081em;margin-top:13px;color:#333;clear:both}
+@media(-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){.layer__content .utilitytext__copy2 p,.layer__content .aem--cookielayerinformation__base p{font-family:"DaimlerCS-Light",Helvetica,Arial,sans-serif}
+}
+.layer__content .utilitytext__copy2 a,.layer__content .aem--cookielayerinformation__base a{color:#fff;color:#333}
+.layer__content .utilitytext__copy2 a:before,.layer__content .aem--cookielayerinformation__base a:before{font-family:"DaimlerIcons";content:"";speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;vertical-align:baseline;line-height:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding-right:.375em}
+.aem--is-light .layer__content .utilitytext__copy2 a,.aem--is-light .layer__content .aem--cookielayerinformation__base a{color:#333}
+.layer__content .utilitytext__copy2 a:hover,.aem--is-light .layer__content .utilitytext__copy2 a:hover,.layer__content .aem--cookielayerinformation__base a:hover,.aem--is-light .layer__content .aem--cookielayerinformation__base a:hover{color:#00adef}
+.contentpager__base .layer__content .utilitytext__copy2 a,.aem--is-dark .layer__content .utilitytext__copy2 a,.contentpager__base .layer__content .aem--cookielayerinformation__base a,.aem--is-dark .layer__content .aem--cookielayerinformation__base a{color:#fff}
+.pi__base .layer__content .utilitytext__copy2 a,.aem--is-light .layer__content .utilitytext__copy2 a,.pi__base .layer__content .aem--cookielayerinformation__base a,.aem--is-light .layer__content .aem--cookielayerinformation__base a{color:#333}
+.aem.aem--is-not-touch-device .layer__content .utilitytext__copy2 a:hover,.aem.aem--is-not-touch-device .layer__content .utilitytext__copy2 a:active,.aem.aem--is-not-touch-device .layer__content .aem--cookielayerinformation__base a:hover,.aem.aem--is-not-touch-device .layer__content .aem--cookielayerinformation__base a:active{color:#00adef}
+.layer__content .utilitytext__copy2 a:hover,.layer__content .aem--cookielayerinformation__base a:hover{color:#00adef}
+.layer__content .utilitytext__copy2 .productinformation__bullet,.layer__content .aem--cookielayerinformation__base .productinformation__bullet{color:#333}
+@media(min-width:0) and (max-width:767px){.layer__content .utilitytext__copywrap:first-child{padding-top:24px}
+}
+.layer__content .utilitytext__copywrap+.utilitytext__copywrap{margin-top:29px}
+.layer__content .aem--cookielayerinformation__base{overflow:auto}
+.layer__content .aem--cookielayerinformation__base .aem--cookielayerinformation__item{font-size:1rem;font-family:"DaimlerCS-Regular",Helvetica,Arial,sans-serif;line-height:1.375;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding-top:0;padding-bottom:.10281em;margin-top:-.06081em;color:#333;border-top:1px solid #ccc;padding:10px}
+@media(-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){.layer__content .aem--cookielayerinformation__base .aem--cookielayerinformation__item{font-family:"DaimlerCS-Light",Helvetica,Arial,sans-serif}
+}
+.layer__content .aem--cookielayerinformation__base .aem--cookielayerinformation__item:first-of-type{margin-top:10px}
+.layer__content .aem--cookielayerinformation__base .aem--cookielayerinformation__item span{font-weight:bold}
+@media(min-width:768px) and (max-width:1023px){.aem .layer__legalLinks{width:714px}
+}
+@media(min-width:1024px) and (max-width:1279px){.aem .layer__legalLinks{width:762px}
+.aem .layer__legalLinks .utilitytext__copywrap{width:566px}
+}
+@media(min-width:1280px) and (max-width:1439px){.aem .layer__legalLinks{width:958px}
+.aem .layer__legalLinks .utilitytext__copywrap{width:722px}
+}
+@media(min-width:1440px){.aem .layer__legalLinks{width:892px}
+.aem .layer__legalLinks .utilitytext__copywrap{width:507px}
+}
+.layer__legalLinks .tabnav{margin-top:36px}
+@media(min-width:768px){.layer__legalLinks .tabnav{padding-top:36px}
+}
+.layer__legalLinks .tabnav__base{padding-top:0}
+@media(min-width:768px){.layer__legalLinks .tabnav__content{display:none}
+}
+.layer__legalLinks .section{background:#fff}
+.layer__legalLinks .generictable__headline{color:#333}

@@ -1,0 +1,38 @@
+.aem--return-to-viewport-top__base{width:100%;float:left;margin-left:0;margin-right:0;padding:27px 0 17px;text-align:center}
+.aem--is-light .aem--return-to-viewport-top__base{display:none}
+@media(min-width:480px) and (max-width:767px){.aem--return-to-viewport-top__base{padding:17px 0}
+}
+@media(min-width:768px){.aem--return-to-viewport-top__base{padding-top:25px;padding-bottom:0;text-align:right}
+}
+@media(min-width:768px) and (max-width:1023px){.aem--return-to-viewport-top__base{width:165px;float:right;margin-right:0}
+}
+@media(min-width:1024px) and (max-width:1279px){.aem--return-to-viewport-top__base{width:216px;float:right;margin-right:0}
+}
+@media(min-width:1280px) and (max-width:1439px){.aem--return-to-viewport-top__base{width:272px;float:right;margin-right:0}
+}
+@media(min-width:1440px){.aem--return-to-viewport-top__base{width:317px;float:right;margin-right:0}
+}
+@media(min-width:768px){.aem--return-to-viewport-top__base+.aem--footer__line{display:none}
+}
+.aem--return-to-viewport-top__txt{display:none}
+@media(min-width:768px){.aem--return-to-viewport-top__txt{display:inline-block}
+}
+.aem--return-to-viewport-top__txt:before{font-size:.875rem;font-family:"DaimlerIcons";line-height:1;padding-top:.29757em;padding-bottom:.27557em;float:right;font-size:9px;margin-left:10px;margin-top:5px;content:"";-webkit-transform:rotate(180deg);transform:rotate(180deg)}
+.aem--return-to-viewport-top__ico:before{font-size:18px;display:inline-block}
+@media(min-width:768px){.aem--return-to-viewport-top__ico{display:none}
+}
+.aem--return-to-viewport-top__link{font-size:1rem;font-family:"DaimlerCS-Regular",Helvetica,Arial,sans-serif;line-height:1.25;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding-top:.00912em;padding-bottom:.15788em;-webkit-box-shadow:none;box-shadow:none;background-color:transparent;-webkit-transition:none;transition:none;border:0;border-radius:0;outline:0;padding:0;margin:0;color:#fff}
+@media(-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){.aem--return-to-viewport-top__link{font-family:"DaimlerCS-Light",Helvetica,Arial,sans-serif}
+}
+.aem--return-to-viewport-top__link:hover{color:#00adef}
+.aem--return-to-viewport-top__link.aem--anchornav__title{font-size:1.25rem;font-family:"DaimlerCS-Regular",Helvetica,Arial,sans-serif;line-height:1.2;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;margin-bottom:9px;text-align:left}
+@media(-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){.aem--return-to-viewport-top__link.aem--anchornav__title{font-family:"DaimlerCS-Light",Helvetica,Arial,sans-serif}
+}
+@media(min-width:768px){.aem--return-to-viewport-top__link.aem--anchornav__title{padding-top:0;padding-bottom:.1049em;margin-top:1.4121em}
+}
+@media(min-width:1440px){.aem--return-to-viewport-top__link.aem--anchornav__title{font-size:1.375rem;font-family:"DaimlerCS-Regular",Helvetica,Arial,sans-serif;line-height:1.18182;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding-top:0;padding-bottom:.08564em;margin-top:1.26318em}
+}
+@media(min-width:1440px) and (-webkit-min-device-pixel-ratio:2),(min-width:1440px) and (min-resolution:192dpi){.aem--return-to-viewport-top__link.aem--anchornav__title{font-family:"DaimlerCS-Light",Helvetica,Arial,sans-serif}
+}
+.aem--return-to-viewport-top__link.aem--ext-inverted:not(:hover) .aem--return-to-viewport-top__txt{color:#333}
+.aem--return-to-viewport-top__link.aem--ext-mobile-with-text .aem--return-to-viewport-top__txt{display:block}

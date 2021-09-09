@@ -1,0 +1,47 @@
+.nextstepnavigation__base{position:fixed;bottom:0;display:table;table-layout:fixed;width:100%;z-index:15}
+@media(min-width:768px){.nextstepnavigation__base{display:block;bottom:inherit;table-layout:inherit;width:auto;left:calc(100% - 45px);top:calc(50vh - 35px);-webkit-transform:rotate(0) translateY(-50%);transform:rotate(0) translateY(-50%)}
+.aem--is-not-touch-device .nextstepnavigation__base{top:50%}
+}
+.nextstepnavigation__base--preview{table-layout:inherit}
+@media(max-width:767.98px){.nextstepnavigation__base .nextstepnavigationelement:nth-child(n+6){display:none}
+}
+.nextstepnavigation__base .livechat,.nextstepnavigationelement,.nextstepnavigationsurveyelement{background:#333;border-right:1px solid #000;display:table-cell;margin-bottom:1px;vertical-align:bottom}
+@media(min-width:768px){.nextstepnavigation__base .livechat,.nextstepnavigationelement,.nextstepnavigationsurveyelement{display:block;background:#00adef;border-right:0;overflow:hidden;min-width:45px;height:45px}
+}
+@media(min-width:768px){.nextstepnavigation__base .livechat:hover,.nextstepnavigationelement:hover,.nextstepnavigationsurveyelement:hover{background:#0088c6}
+}
+.nextstepnavigation__base .livechat:last-child,.nextstepnavigationelement:last-child,.nextstepnavigationsurveyelement:last-child{border-right:0}
+@media(min-width:768px){.nextstepnavigation__base .livechat:last-child,.nextstepnavigationelement:last-child,.nextstepnavigationsurveyelement:last-child{border-bottom:0;margin-bottom:0}
+}
+@media(min-width:768px){.nextstepnavigation__base .livechat.is-animated,.nextstepnavigationelement.is-animated,.nextstepnavigationsurveyelement.is-animated{-webkit-transition:-webkit-transform .5s;transition:-webkit-transform .5s;transition:transform .5s;transition:transform .5s,-webkit-transform .5s}
+}
+.nextstepnavigation__img,.livechat .nextstepnavigation__icon{width:25px;height:25px;margin:0 auto 5px;overflow:hidden}
+@media(min-width:768px){.nextstepnavigation__img,.livechat .nextstepnavigation__icon{float:left;text-align:center;margin:10px}
+}
+.nextstepnavigation__img .aem--svgImg,.livechat .nextstepnavigation__icon .aem--svgImg{width:25px}
+.nextstepnavigation__icon{width:25px;height:25px;text-align:center;margin:0 auto 5px}
+@media(max-width:767.98px){.livechat .nextstepnavigation__icon{display:block;float:none}
+.livechat .nextstepnavigation__icon::before{font-size:20px;position:relative;top:3px}
+}
+@media(min-width:768px){.nextstepnavigation__icon{float:left;margin:10px}
+}
+.nextstepnavigation__title{font-size:.625rem;font-family:"DaimlerCS-Regular",Helvetica,Arial,sans-serif;line-height:1;text-align:center}
+@media(-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){.nextstepnavigation__title{font-family:"DaimlerCS-Light",Helvetica,Arial,sans-serif}
+}
+@media(min-width:768px){.nextstepnavigation__title{font-size:.625rem;font-family:"DaimlerCS-Regular",Helvetica,Arial,sans-serif;line-height:1.4}
+}
+@media(min-width:768px) and (-webkit-min-device-pixel-ratio:2),(min-width:768px) and (min-resolution:192dpi){.nextstepnavigation__title{font-family:"DaimlerCS-Light",Helvetica,Arial,sans-serif}
+}
+@media(min-width:768px){.nextstepnavigation__title{font-size:1rem;font-family:"DaimlerCS-Regular",Helvetica,Arial,sans-serif;line-height:1.25;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding-top:.00912em;padding-bottom:.15788em;height:45px;line-height:45px;margin-left:5px;padding-right:15px;padding-left:5px}
+}
+@media(min-width:768px) and (-webkit-min-device-pixel-ratio:2),(min-width:768px) and (min-resolution:192dpi){.nextstepnavigation__title{font-family:"DaimlerCS-Light",Helvetica,Arial,sans-serif}
+}
+@media(max-width:767.98px){.livechat .nextstepnavigation__title{position:relative}
+}
+.nextstepnavigation__link{font-size:1rem;font-family:"DaimlerCS-Regular",Helvetica,Arial,sans-serif;line-height:1.25;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding-top:.00912em;padding-bottom:.15788em;text-decoration:none;color:#fff;overflow:auto;display:block;padding:10px 4px;max-height:67px}
+@media(-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){.nextstepnavigation__link{font-family:"DaimlerCS-Light",Helvetica,Arial,sans-serif}
+}
+@media(min-width:768px){.nextstepnavigation__link{display:-webkit-box;display:-ms-flexbox;display:flex;white-space:nowrap;padding:0;min-width:45px;min-height:45px}
+}
+@media(min-width:768px){html{-ms-overflow-style:scrollbar}
+}

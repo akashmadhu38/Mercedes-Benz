@@ -1,0 +1,8 @@
+.scrollHint__base{background-color:#000;display:none;opacity:.7;position:fixed;bottom:2px;left:calc((100% - 80px) / 2);width:80px;height:54px;padding-top:15px}
+@media(min-width:1024px){.scrollHint__base{display:block}
+}
+.scrollHint__arrowIcon{vertical-align:bottom;text-align:center;display:block;line-height:0}
+.scrollHint__arrowIcon:before{content:"";font-family:"DaimlerIcons"}
+.scrollHint__arrowIcon--pulse{opacity:.3;-webkit-animation:aem-pulse 2s infinite;animation:aem-pulse 2s infinite}
+.scrollHint__arrowIcon--pulse:first-child{line-height:18px}
+.scrollHint__arrowIcon--pulse:not(:first-child){-webkit-animation-delay:.2s;animation-delay:.2s}

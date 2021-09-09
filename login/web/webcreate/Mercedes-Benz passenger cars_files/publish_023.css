@@ -1,0 +1,33 @@
+.pricefilter__base{margin-top:30px}
+@media(min-width:768px){.pricefilter__base{margin-top:24px;padding-bottom:20px}
+.pricefilter__base::after{content:"";display:table;clear:both}
+}
+.pricefilter__price{margin-bottom:20px}
+.pricefilter__priceMinValue{width:39.63797%;float:left;margin-right:3.47776%;text-align:left}
+@media(min-width:768px) and (max-width:1023px){.pricefilter__priceMinValue{width:165px;float:left;margin-right:18px;width:calc(165px - 30px);text-align:right}
+}
+@media(min-width:1024px) and (max-width:1279px){.pricefilter__priceMinValue{width:216px;float:left;margin-right:18px;width:calc(216px - 30px);text-align:right}
+}
+@media(min-width:1280px) and (max-width:1439px){.pricefilter__priceMinValue{width:272px;float:left;margin-right:22px;width:calc(272px - 30px);text-align:right}
+}
+@media(min-width:1440px){.pricefilter__priceMinValue{width:317px;float:left;margin-right:28px;width:calc(317px - 30px);text-align:right}
+}
+.pricefilter__priceMaxValue{width:39.63797%;float:right;margin-right:0;text-align:right}
+@media(min-width:768px) and (max-width:1023px){.pricefilter__priceMaxValue{width:165px;float:right;margin-right:0;width:calc(165px - 30px);text-align:left}
+}
+@media(min-width:1024px) and (max-width:1279px){.pricefilter__priceMaxValue{width:216px;float:right;margin-right:0;width:calc(216px - 30px);text-align:left}
+}
+@media(min-width:1280px) and (max-width:1439px){.pricefilter__priceMaxValue{width:272px;float:right;margin-right:0;width:calc(272px - 30px);text-align:left}
+}
+@media(min-width:1440px){.pricefilter__priceMaxValue{width:317px;float:right;margin-right:0;width:calc(317px - 30px);text-align:left}
+}
+@media(min-width:768px){.pricefilter__priceSlider{float:left;clear:none}
+}
+@media(min-width:768px) and (max-width:1023px){.pricefilter__priceSlider{width:348px}
+}
+@media(min-width:1024px) and (max-width:1279px){.pricefilter__priceSlider{width:450px}
+}
+@media(min-width:1280px) and (max-width:1439px){.pricefilter__priceSlider{width:566px}
+}
+@media(min-width:1440px){.pricefilter__priceSlider{width:662px}
+}
